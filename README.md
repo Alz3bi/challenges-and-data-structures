@@ -9,5 +9,8 @@
 ### Challenge 02: Maximum Value
 ![Maximum-Value](code3.jpg)
 
-### Challenge 04: Remove Middle Value
+### Challenge 03: Remove Middle Value
 ![Remove-Middle-Value](code4.jpg)
+
+### Challenge 04: Insert Middle Value
+![Insert-Middle-Value](code2.jpg)
