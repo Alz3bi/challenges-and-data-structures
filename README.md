@@ -18,4 +18,4 @@
 ### Whiteboard Images
 
 ### Challenge 05: Find-Duplicates
-![Find-Duplicates](Challenges/Find-Duplicates/image.jpg)
+![Find-Duplicates](Challenges/Find-Duplicates/Image.jpg)
