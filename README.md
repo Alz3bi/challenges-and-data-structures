@@ -14,3 +14,6 @@
 
 ### Challenge 04: Insert Middle Value
 ![Insert-Middle-Value](code2.jpg)
+
+### Challenge 05: Find-Duplicates
+![Find-Duplicates](Challenges/Find-Duplicates/Image.jpg)
