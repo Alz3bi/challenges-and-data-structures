@@ -17,3 +17,6 @@
 
 ### Challenge 05: Find-Duplicates
 ![Find-Duplicates](Challenges/Find-Duplicates/Image.jpg)
+
+### Challenge 06-A: Common Elements
+![Common-Elements](Challenges/Common-Elements/Image.jpg)
