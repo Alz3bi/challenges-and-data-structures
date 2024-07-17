@@ -34,6 +34,7 @@
 
 ### Challenge 07: Linked-List-Implementation
 
-![Linked-List-Implementation](Data-Structures/LinkedList/Image1.jpg)
-![Linked-List-Implementation](Data-Structures/LinkedList/Image2.jpg)
-![Linked-List-Implementation](Data-Structures/LinkedList/Image3.jpg)
+![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image1.jpg)
+![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image2.jpg)
+![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image3.jpg)
+![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image4.jpg)
