@@ -14,41 +14,20 @@
 
         public static int[] FindDuplicates(int[] array)
         {
-            int[] tempArray = new int[array.Length];
-            int tempIndex = 0;
+            HashSet<int> seen = new HashSet<int>();
+            List<int> duplicates = new List<int>();
 
-            for (int i = 0; i < array.Length; i++)
+            foreach (int value in array)
             {
-                for (int j = i + 1; j < array.Length; j++)
+                if (!seen.Add(value))
                 {
-                    if (array[i] == array[j])
+                    if(!duplicates.Contains(value))
                     {
-                        bool isAlreadyAdded = false;
-                        for (int k = 0; k < tempIndex; k++)
-                        {
-                            if (tempArray[k] == array[i])
-                            {
-                                isAlreadyAdded = true;
-                                break;
-                            }
-                        }
-                        if (!isAlreadyAdded)
-                        {
-                            tempArray[tempIndex++] = array[i];
-                        }
-                        break; // Move to the next element in the array
+                        duplicates.Add(value);
                     }
                 }
             }
-
-            // Copy duplicates to the final array
-            int[] duplicates = new int[tempIndex];
-            for (int i = 0; i < tempIndex; i++)
-            {
-                duplicates[i] = tempArray[i];
-            }
-
-            return duplicates;
+            return duplicates.ToArray();
         }
     }
 }
