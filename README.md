@@ -38,3 +38,4 @@
 ![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image2.jpg)
 ![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image3.jpg)
 ![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image4.jpg)
+![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image5.jpg)
