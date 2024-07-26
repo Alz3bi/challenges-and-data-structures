@@ -39,3 +39,8 @@
 ![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image3.jpg)
 ![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image4.jpg)
 ![Linked-List-Implementation](Data-Structures/Linked-List-Implementation/Image5.jpg)
+
+### Stack & Queue Implementation
+
+![Stack & Queue Implementation](Data-Structures/Stack&Queue/Image1.jpg)
+![Stack & Queue Implementation](Data-Structures/Stack&Queue/Image2.jpg)
