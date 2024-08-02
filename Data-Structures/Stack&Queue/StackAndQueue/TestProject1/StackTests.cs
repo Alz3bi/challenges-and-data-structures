@@ -41,5 +41,47 @@ namespace TestProject1
             // Assert
             Assert.True(isEmpty);
         }
+        [Fact]
+        public void StackWithReverseTest()
+        {
+            // Arrange
+            StackWithReverse stackWithReverse = new StackWithReverse();
+            stackWithReverse.Push(1);
+            stackWithReverse.Push(2);
+            stackWithReverse.Push(3);
+
+            // Act
+            stackWithReverse.ReverseStack();
+
+            // Assert
+            Assert.Equal(1, stackWithReverse.Pop());
+            Assert.Equal(2, stackWithReverse.Pop());
+            Assert.Equal(3, stackWithReverse.Pop());
+        }
+        [Fact]
+        public void StackWithReverseEmptyTest()
+        {
+            // Arrange
+            StackWithReverse stackWithReverse = new StackWithReverse();
+
+            // Act
+            stackWithReverse.ReverseStack();
+
+            // Assert
+            Assert.True(stackWithReverse.IsEmpty());
+        }
+        [Fact]
+        public void StackWithReverseOneElementTest()
+        {
+            // Arrange
+            StackWithReverse stackWithReverse = new StackWithReverse();
+            stackWithReverse.Push(1);
+
+            // Act
+            stackWithReverse.ReverseStack();
+
+            // Assert
+            Assert.Equal(1, stackWithReverse.Pop());
+        }
     }
 }

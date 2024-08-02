@@ -44,3 +44,7 @@
 
 ![Stack & Queue Implementation](Data-Structures/Stack&Queue/Image1.jpg)
 ![Stack & Queue Implementation](Data-Structures/Stack&Queue/Image2.jpg)
+
+### Reverse a Stack using Queue
+
+![Reverse a Stack using Queue](Data-Structures/Stack&Queue/Image3.jpg)
