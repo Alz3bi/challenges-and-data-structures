@@ -4,24 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Stack stack = new Stack();
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
-            stack.Pop();
-            stack.Peek();
-            stack.Print();
-            stack.IsEmpty();
+            StackWithReverse stackWithReverse = new StackWithReverse();
+            stackWithReverse.Push(1);
+            stackWithReverse.Push(2);
+            stackWithReverse.Push(3);
+            stackWithReverse.Print();
+            stackWithReverse.ReverseStack();
             Console.WriteLine("----------------------------------");
-            Queue queue = new Queue();
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
-            queue.Dequeue();
-            queue.Peek();
-            queue.Print();
-            queue.IsEmpty();
-
+            stackWithReverse.Print();
         }
     }
 }
