@@ -48,3 +48,7 @@
 ### Reverse a Stack using Queue
 
 ![Reverse a Stack using Queue](Data-Structures/Stack&Queue/Image3.jpg)
+
+### Delete Middle Element of a Stack
+
+![Delete Middle Element of a Stack](Data-Structures/Stack&Queue/Image4.jpg)

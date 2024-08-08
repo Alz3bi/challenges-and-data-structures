@@ -9,7 +9,7 @@ namespace StackAndQueue
     public class Stack
     {
         private Node? _top;
-        private int _size;
+        protected int _size;
 
         public Stack()
         {
