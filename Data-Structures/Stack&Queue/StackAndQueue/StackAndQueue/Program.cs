@@ -4,14 +4,13 @@
     {
         static void Main(string[] args)
         {
-            StackWithReverse stackWithReverse = new StackWithReverse();
-            stackWithReverse.Push(1);
-            stackWithReverse.Push(2);
-            stackWithReverse.Push(3);
-            stackWithReverse.Print();
-            stackWithReverse.ReverseStack();
-            Console.WriteLine("----------------------------------");
-            stackWithReverse.Print();
+            StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            stack.Push(4);
+            stack.DeleteMiddle();
+            stack.Print();
         }
     }
 }

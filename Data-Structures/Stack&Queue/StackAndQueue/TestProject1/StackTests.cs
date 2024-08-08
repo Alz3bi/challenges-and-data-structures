@@ -83,5 +83,46 @@ namespace TestProject1
             // Assert
             Assert.Equal(1, stackWithReverse.Pop());
         }
+        [Fact]
+        public void StackWithDeleteMiddleEvenTest()
+        {
+            // Arrange
+            StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            stack.Push(4);
+
+            // Act
+            stack.DeleteMiddle();
+
+            // Assert
+            Assert.Equal(4, stack.Pop());
+            Assert.Equal(2, stack.Pop());
+            Assert.Equal(1, stack.Pop());
+            Assert.True(stack.IsEmpty());
+        }
+        [Fact]
+        public void StackWithDeleteMiddleOddTest()
+        {
+            // Arrange
+            StackWithDeleteMiddle stack = new StackWithDeleteMiddle();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            stack.Push(4);
+            stack.Push(5);
+
+            // Act
+            stack.DeleteMiddle();
+
+            // Assert
+            Assert.Equal(5, stack.Pop());
+            Assert.Equal(4, stack.Pop());
+            Assert.Equal(2, stack.Pop());
+            Assert.Equal(1, stack.Pop());
+            Assert.True(stack.IsEmpty());
+        }
     }
+
 }
