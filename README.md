@@ -52,3 +52,7 @@
 ### Delete Middle Element of a Stack
 
 ![Delete Middle Element of a Stack](Data-Structures/Stack&Queue/Image4.jpg)
+
+### Min Stack Challenge
+
+![Min Stack Challenge](Data-Structures/Stack&Queue/Image5.jpg)
