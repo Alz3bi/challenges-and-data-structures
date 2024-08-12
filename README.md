@@ -56,3 +56,8 @@
 ### Min Stack Challenge
 
 ![Min Stack Challenge](Data-Structures/Stack&Queue/Image5.jpg)
+
+### Tree Implementation
+
+![Tree Implementation](Data-Structures/Trees/Image1.jpg)
+![Tree Implementation](Data-Structures/Trees/Image2.jpg)
