@@ -61,3 +61,7 @@
 
 ![Tree Implementation](Data-Structures/Trees/Image1.jpg)
 ![Tree Implementation](Data-Structures/Trees/Image2.jpg)
+
+### Mirror Tree
+
+![Mirror Tree](Data-Structures/Trees/Image3.jpg)
