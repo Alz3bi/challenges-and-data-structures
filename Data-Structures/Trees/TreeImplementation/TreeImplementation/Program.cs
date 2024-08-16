@@ -6,31 +6,29 @@
         {
             BinarySearchTree bst = new BinarySearchTree();
 
-            // Add nodes to the BST
-            bst.Add(10);
-            bst.Add(5);
-            bst.Add(15);
-            bst.Add(7);
-            bst.Add(4);
-            bst.Add(12);
-            bst.Add(17);
-            bst.Print(); // 15 10 7 5
-            Console.WriteLine("-------------------------------");
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new Node(4);
+            Btree.Root.Left = new Node(8);
+            Btree.Root.Right = new Node(7);
+            Btree.Root.Left.Left = new Node(12);
+            Btree.Root.Left.Right = new Node(9);
 
-            // Check if a node exists
-            bool contains = bst.Contains(7); // contains: true
-            Console.WriteLine("contains 7: " + contains);
-            Console.WriteLine("-------------------------------");
+            List<int> originalInorder = Btree.InOrderTraversal(); // Output: [12, 8, 9, 4, 7]
+            foreach (var item in originalInorder)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("------------------------");
 
-            // Remove a node
-            bst.Remove(5);
-            bst.Print(); // 15 10 7
-            Console.WriteLine("-------------------------------");
+            Btree.MirrorTree();
 
-            // Check if the node is removed
-            contains = bst.Contains(5); // contains: false
-            Console.WriteLine("contains 5: " + contains);
-            Console.WriteLine("-------------------------------");
+
+            List<int> mirroredInorder = Btree.InOrderTraversal(); // Output: [7, 4, 9, 8, 12]
+            foreach (var item in mirroredInorder)
+            {
+                Console.WriteLine(item);
+            }
+
 
         }
     }

@@ -10,6 +10,42 @@ namespace TreeImplementation
     {
         public Node? Root { get; set; }
 
+        public void MirrorTree()
+        {
+            if (Root == null)
+            {
+                Console.WriteLine("Tree is empty.");
+                return;
+            }
+            MirrorTree(Root);
+        }
+        private void MirrorTree(Node node)
+        {
+            if (node == null)
+                return;
+
+            MirrorTree(node.Left);
+            MirrorTree(node.Right);
+
+            Node temp = node.Left;
+            node.Left = node.Right;
+            node.Right = temp;
+        }
+        public List<int> InOrderTraversal()
+        {
+            List<int> result = new List<int>();
+            InOrderTraversal(Root, result);
+            return result;
+        }
+        private void InOrderTraversal(Node? node, List<int> result)
+        {
+            if (node != null)
+            {
+                InOrderTraversal(node.Left, result);
+                result.Add(node.Value);
+                InOrderTraversal(node.Right, result);
+            }
+        }
         public void InOrder()
         {
             if (Root == null)
