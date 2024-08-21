@@ -10,6 +10,48 @@ namespace TreeImplementation
     {
         public Node? Root { get; set; }
 
+        public void FindSecondMax()
+        {
+            if (Root == null)
+            {
+                Console.WriteLine("Tree is empty.");
+                return;
+            }
+
+            Node? secondMax = FindSecondMax(Root, null);
+            if (secondMax == null)
+            {
+                Console.WriteLine("Second max does not exist.");
+            }
+            else
+            {
+                Console.WriteLine("Second max is: " + secondMax.Value);
+            }
+        }
+        private Node? FindSecondMax(Node node, Node? parent)
+        {
+            if (node.Right != null)
+            {
+                return FindSecondMax(node.Right, node);
+            }
+            else if (node.Left != null)
+            {
+                return FindMax(node.Left);
+            }
+            else
+            {
+                return parent;
+            }
+        }
+
+        private Node? FindMax(Node node)
+        {
+            while (node.Right != null)
+            {
+                node = node.Right;
+            }
+            return node;
+        }
         public void MirrorTree()
         {
             if (Root == null)

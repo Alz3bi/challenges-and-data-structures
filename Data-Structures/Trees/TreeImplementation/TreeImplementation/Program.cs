@@ -4,32 +4,16 @@
     {
         static void Main(string[] args)
         {
-            BinarySearchTree bst = new BinarySearchTree();
-
             BinaryTree Btree = new BinaryTree();
-            Btree.Root = new Node(4);
-            Btree.Root.Left = new Node(8);
-            Btree.Root.Right = new Node(7);
-            Btree.Root.Left.Left = new Node(12);
-            Btree.Root.Left.Right = new Node(9);
+            Btree.Root = new Node(10);
+            Btree.Root.Left = new Node(5);
+            Btree.Root.Right = new Node(20);
+            Btree.Root.Left.Left = new Node(3);
+            Btree.Root.Left.Right = new Node(7);
+            Btree.Root.Right.Left = new Node(15);
+            Btree.Root.Right.Right = new Node(25);
 
-            List<int> originalInorder = Btree.InOrderTraversal(); // Output: [12, 8, 9, 4, 7]
-            foreach (var item in originalInorder)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("------------------------");
-
-            Btree.MirrorTree();
-
-
-            List<int> mirroredInorder = Btree.InOrderTraversal(); // Output: [7, 4, 9, 8, 12]
-            foreach (var item in mirroredInorder)
-            {
-                Console.WriteLine(item);
-            }
-
-
+            Btree.FindSecondMax(); // Output: 20
         }
     }
 }

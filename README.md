@@ -65,3 +65,7 @@
 ### Mirror Tree
 
 ![Mirror Tree](Data-Structures/Trees/Image3.jpg)
+
+### Second Maximum Value
+
+![Second Maximum Value](Data-Structures/Trees/Image4.jpg)
