@@ -10,6 +10,18 @@ namespace TreeImplementation
     {
         public Node? Root { get; set; }
 
+        public int LeafSum()
+        {
+            return LeafSum(Root);
+        }
+        private int LeafSum(Node? node)
+        {
+            if (node == null)
+                return 0;
+            if (node.Left == null && node.Right == null)
+                return node.Value;
+            return LeafSum(node.Left) + LeafSum(node.Right);
+        }
         public void FindSecondMax()
         {
             if (Root == null)
