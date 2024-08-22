@@ -69,3 +69,7 @@
 ### Second Maximum Value
 
 ![Second Maximum Value](Data-Structures/Trees/Image4.jpg)
+
+### Binary Tree - Sum of leaf nodes
+
+![Sum of leaf nodes](Data-Structures/Trees/Image5.jpg)
