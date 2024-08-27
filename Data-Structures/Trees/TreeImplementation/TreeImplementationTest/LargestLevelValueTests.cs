@@ -1,9 +1,18 @@
-﻿namespace TreeImplementation
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TreeImplementation;
+
+namespace TreeImplementationTest
 {
-    public class Program
+    public class LargestLevelValueTests
     {
-        static void Main(string[] args)
+        [Fact]
+        public void SumOfCalculatedLargestLevelValues()
         {
+            // Arrange
             BinaryTree Btree = new BinaryTree();
             Btree.Root = new Node(5);
             Btree.Root.Left = new Node(13);
@@ -16,13 +25,12 @@
             Btree.Root.Left.Left.Right = new Node(4);
             Btree.Root.Right.Left.Right = new Node(11);
 
+            // Act
             List<int> largestValues = Btree.LargestLevelValue(); // Output: [5, 13, 20, 11]
-            Console.WriteLine("Largest values at each level: ");
-            foreach (int value in largestValues)
-            {
-                Console.Write(value + " ");
-            }
+            int sum = largestValues.Sum();
 
+            // Assert
+            Assert.Equal(49, sum);
         }
     }
 }
