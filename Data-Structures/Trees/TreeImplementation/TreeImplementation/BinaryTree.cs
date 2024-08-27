@@ -10,6 +10,38 @@ namespace TreeImplementation
     {
         public Node? Root { get; set; }
 
+        public List<int> LargestLevelValue() {
+            if (Root == null)
+            {
+                Console.WriteLine("Tree is empty.");
+                return new List<int>();
+            }
+
+            List<int> result = new List<int>();
+            Queue<Node> queue = new Queue<Node>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+                int max = int.MinValue;
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    Node node = queue.Dequeue();
+                    max = Math.Max(max, node.Value);
+
+                    if (node.Left != null)
+                        queue.Enqueue(node.Left);
+                    if (node.Right != null)
+                        queue.Enqueue(node.Right);
+                }
+
+                result.Add(max);
+            }
+
+            return result;
+        }
         public int LeafSum()
         {
             return LeafSum(Root);

@@ -73,3 +73,7 @@
 ### Binary Tree - Sum of leaf nodes
 
 ![Sum of leaf nodes](Data-Structures/Trees/Image5.jpg)
+
+### Binary Tree - Largest Value at Each Level
+
+![Largest Value at Each Level](Data-Structures/Trees/Image6.jpg)
