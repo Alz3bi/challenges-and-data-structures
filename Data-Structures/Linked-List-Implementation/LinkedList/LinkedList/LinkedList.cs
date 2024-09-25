@@ -137,5 +137,27 @@ namespace LinkedList
             }
             return mergedList;
         }
+        public void RotateByK(int k)
+        {
+            if (Head == null || k == 0) return;
+
+            Node? current = Head;
+            int count = 1;
+            while (count < k && current != null)
+            {
+                current = current.Next;
+                count++;
+            }
+            if (current == null) return;
+
+            Node? kthNode = current;
+            while (current.Next != null)
+            {
+                current = current.Next;
+            }
+            current.Next = Head;
+            Head = kthNode.Next;
+            kthNode.Next = null;
+        }
     }
 }

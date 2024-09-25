@@ -77,3 +77,7 @@
 ### Binary Tree - Largest Value at Each Level
 
 ![Largest Value at Each Level](Data-Structures/Trees/Image6.jpg)
+
+### Linked List - Rotate by K
+
+![Rotate by K](Data-Structures/Linked-List-Implementation/Image6.jpg)
