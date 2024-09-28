@@ -222,5 +222,36 @@ namespace TreeImplementation
                 Print(node.Left, level + 1, false);
             }
         }
+        public void RightView()
+        {
+            if (Root == null)
+            {
+                Console.WriteLine("Tree is empty.");
+                return;
+            }
+
+            Queue<Node> queue = new Queue<Node>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    Node node = queue.Dequeue();
+
+                    if (i == levelSize - 1)
+                    {
+                        Console.Write(node.Value + " ");
+                    }
+
+                    if (node.Left != null)
+                        queue.Enqueue(node.Left);
+                    if (node.Right != null)
+                        queue.Enqueue(node.Right);
+                }
+            }
+        }
     }
 }
