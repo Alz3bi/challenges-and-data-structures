@@ -85,3 +85,7 @@
 ### Binary Tree - Print Right View
 
 ![Print Right View](Data-Structures/Trees/Image7.jpg)
+
+### Binary Tree - Level with Maximum Number of Nodes
+
+![Level with Maximum Number of Nodes](Data-Structures/Trees/Image8.jpg)
