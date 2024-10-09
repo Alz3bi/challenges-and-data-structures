@@ -291,5 +291,39 @@ namespace TreeImplementation
 
             return maxLevel;
         }
+        public int FindMinimumDepth()
+        {
+            if (Root == null)
+            {
+                Console.WriteLine("Tree is empty.");
+                return 0;
+            }
+
+            Queue<(Node node, int depth)> queue = new Queue<(Node node, int depth)>();
+            queue.Enqueue((Root, 1));
+
+            while (queue.Count > 0)
+            {
+                var (node, depth) = queue.Dequeue();
+
+                if (node.Left == null && node.Right == null)
+                {
+                    return depth;
+                }
+
+                if (node.Left != null)
+                {
+                    queue.Enqueue((node.Left, depth + 1));
+                }
+
+                if (node.Right != null)
+                {
+                    queue.Enqueue((node.Right, depth + 1));
+                }
+            }
+
+            return 0;
+        }
+
     }
 }

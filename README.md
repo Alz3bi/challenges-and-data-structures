@@ -89,3 +89,7 @@
 ### Binary Tree - Level with Maximum Number of Nodes
 
 ![Level with Maximum Number of Nodes](Data-Structures/Trees/Image8.jpg)
+
+### Binary Tree - Minimum Depth
+
+![Minimum Depth](Data-Structures/Trees/Image9.jpg)
