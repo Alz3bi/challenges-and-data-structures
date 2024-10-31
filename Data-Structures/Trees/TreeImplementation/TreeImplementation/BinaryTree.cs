@@ -324,6 +324,33 @@ namespace TreeImplementation
 
             return 0;
         }
+        public void ConvertToBST()
+        {
+            try
+            {
+                if (Root == null)
+                    throw new InvalidOperationException("Tree is empty.");
+
+                List<int> values = new List<int>();
+                InOrderTraversal(Root, values);
+                values.Sort();
+
+                int index = 0;
+                ConvertToBST(Root, values, ref index);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+        }
+        private void ConvertToBST(Node? node, List<int> values, ref int index)
+        {
+            if (node == null) return;
+
+            ConvertToBST(node.Left, values, ref index);
+            node.Value = values[index++];
+            ConvertToBST(node.Right, values, ref index);
+        }
 
     }
 }
