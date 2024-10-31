@@ -93,3 +93,7 @@
 ### Binary Tree - Minimum Depth
 
 ![Minimum Depth](Data-Structures/Trees/Image9.jpg)
+
+### Binary Tree to Binary Search Tree
+
+![Binary Tree to Binary Search Tree](Data-Structures/Trees/Image10.png)

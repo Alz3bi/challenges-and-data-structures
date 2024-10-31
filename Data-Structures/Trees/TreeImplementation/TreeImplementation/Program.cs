@@ -5,16 +5,19 @@
         static void Main(string[] args)
         {
             BinaryTree Btree = new BinaryTree();
-            Btree.Root = new Node(1);
-            Btree.Root.Left = new Node(2);
-            Btree.Root.Right = new Node(3);
-            Btree.Root.Left.Left = new Node(4);
-            Btree.Root.Right.Right = new Node(6);
-            Btree.Root.Left.Right = new Node(5);
+            Btree.Root = new Node(10);
+            Btree.Root.Left = new Node(30);
+            Btree.Root.Right = new Node(15);
+            Btree.Root.Left.Left = new Node(20);
+            Btree.Root.Right.Right = new Node(5);
 
+            Console.WriteLine("Original Tree (InOrder):");
+            Btree.InOrder();
 
-            int minDepth = Btree.FindMinimumDepth();
-            Console.WriteLine(minDepth);
+            Btree.ConvertToBST();
+
+            Console.WriteLine("Converted BST (InOrder):");
+            Btree.InOrder();
 
         }
     }
